@@ -141,6 +141,10 @@
 		8942CD7D181F660F006C2AC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942CD7C181F660F006C2AC8 /* AppDelegate.m */; };
 		8942CD80181F660F006C2AC8 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942CD7F181F660F006C2AC8 /* HelloWorldLayer.m */; };
 		8942CD83181F660F006C2AC8 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942CD82181F660F006C2AC8 /* IntroLayer.m */; };
+		8942CD8E181F813D006C2AC8 /* MainLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942CD8D181F813D006C2AC8 /* MainLayer.m */; };
+		8942CD95181FB635006C2AC8 /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942CD94181FB635006C2AC8 /* Grid.m */; };
+		899FADCD181FCCD000EB8C6C /* grid-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 899FADCB181FCCD000EB8C6C /* grid-hd.png */; };
+		899FADCE181FCCD000EB8C6C /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 899FADCC181FCCD000EB8C6C /* grid.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -425,6 +429,12 @@
 		8942CD7F181F660F006C2AC8 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		8942CD81181F660F006C2AC8 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		8942CD82181F660F006C2AC8 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		8942CD8C181F813D006C2AC8 /* MainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainLayer.h; path = ../MainLayer.h; sourceTree = "<group>"; };
+		8942CD8D181F813D006C2AC8 /* MainLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainLayer.m; path = ../MainLayer.m; sourceTree = "<group>"; };
+		8942CD93181FB635006C2AC8 /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
+		8942CD94181FB635006C2AC8 /* Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grid.m; sourceTree = "<group>"; };
+		899FADCB181FCCD000EB8C6C /* grid-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grid-hd.png"; sourceTree = "<group>"; };
+		899FADCC181FCCD000EB8C6C /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,6 +461,7 @@
 		8942CBCA181F6608006C2AC8 = {
 			isa = PBXGroup;
 			children = (
+				8942CD92181FB602006C2AC8 /* grid */,
 				8942CBEA181F6608006C2AC8 /* magic_bleak */,
 				8942CBD5181F6608006C2AC8 /* Frameworks */,
 				8942CBD4181F6608006C2AC8 /* Products */,
@@ -485,6 +496,8 @@
 		8942CBEA181F6608006C2AC8 /* magic_bleak */ = {
 			isa = PBXGroup;
 			children = (
+				8942CD8C181F813D006C2AC8 /* MainLayer.h */,
+				8942CD8D181F813D006C2AC8 /* MainLayer.m */,
 				8942CD7B181F660F006C2AC8 /* AppDelegate.h */,
 				8942CD7C181F660F006C2AC8 /* AppDelegate.m */,
 				8942CD7E181F660F006C2AC8 /* HelloWorldLayer.h */,
@@ -501,6 +514,7 @@
 		8942CBEB181F6608006C2AC8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8942CD8F181FA11A006C2AC8 /* grid */,
 				8942CBEC181F6608006C2AC8 /* Default.png */,
 				8942CBEE181F6608006C2AC8 /* Default@2x.png */,
 				8942CBF0181F6608006C2AC8 /* Default-568h@2x.png */,
@@ -879,6 +893,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8942CD8F181FA11A006C2AC8 /* grid */ = {
+			isa = PBXGroup;
+			children = (
+				899FADCB181FCCD000EB8C6C /* grid-hd.png */,
+				899FADCC181FCCD000EB8C6C /* grid.png */,
+			);
+			name = grid;
+			sourceTree = "<group>";
+		};
+		8942CD92181FB602006C2AC8 /* grid */ = {
+			isa = PBXGroup;
+			children = (
+				8942CD93181FB635006C2AC8 /* Grid.h */,
+				8942CD94181FB635006C2AC8 /* Grid.m */,
+			);
+			name = grid;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -907,6 +939,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = shirailab;
+				TargetAttributes = {
+					8942CBD2181F6608006C2AC8 = {
+						DevelopmentTeam = 33N2UD34UH;
+					};
+				};
 			};
 			buildConfigurationList = 8942CBCE181F6608006C2AC8 /* Build configuration list for PBXProject "magic_bleak" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -932,8 +969,10 @@
 			files = (
 				8942CBFD181F6608006C2AC8 /* Icon.png in Resources */,
 				8942CD5B181F660F006C2AC8 /* ChangeLog in Resources */,
+				899FADCD181FCCD000EB8C6C /* grid-hd.png in Resources */,
 				8942CBEF181F6608006C2AC8 /* Default@2x.png in Resources */,
 				8942CBF9181F6608006C2AC8 /* Icon-Small.png in Resources */,
+				899FADCE181FCCD000EB8C6C /* grid.png in Resources */,
 				8942CBF5181F6608006C2AC8 /* Icon-72.png in Resources */,
 				8942CBED181F6608006C2AC8 /* Default.png in Resources */,
 				8942CBF7181F6608006C2AC8 /* Icon-Small-50.png in Resources */,
@@ -977,6 +1016,7 @@
 				8942CC4A181F660A006C2AC8 /* CCDrawNode.m in Sources */,
 				8942CCDC181F660C006C2AC8 /* CCTransitionPageTurn.m in Sources */,
 				8942CC0D181F6609006C2AC8 /* CCActionCatmullRom.m in Sources */,
+				8942CD95181FB635006C2AC8 /* Grid.m in Sources */,
 				8942CC84181F660B006C2AC8 /* CCParticleSystem.m in Sources */,
 				8942CCD9181F660C006C2AC8 /* CCTransition.m in Sources */,
 				8942CC81181F660B006C2AC8 /* CCParticleExamples.m in Sources */,
@@ -995,6 +1035,7 @@
 				8942CCAC181F660B006C2AC8 /* CCShaderCache.m in Sources */,
 				8942CCB2181F660C006C2AC8 /* CCSprite.m in Sources */,
 				8942CC59181F660A006C2AC8 /* CCGrabber.m in Sources */,
+				8942CD8E181F813D006C2AC8 /* MainLayer.m in Sources */,
 				8942CD63181F660F006C2AC8 /* mat3.c in Sources */,
 				8942CD7D181F660F006C2AC8 /* AppDelegate.m in Sources */,
 				8942CCED181F660D006C2AC8 /* CCES2Renderer.m in Sources */,
@@ -1114,6 +1155,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1126,6 +1169,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1134,6 +1178,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = magic_bleak/Prefix.pch;
@@ -1145,6 +1191,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1169,6 +1216,7 @@
 				8942CD88181F660F006C2AC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
